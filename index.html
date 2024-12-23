@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cambridge Public School</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  
+}
+
+/* Header Section */
+#header {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:url('https://images.pexels.com/photos/18298079/pexels-photo-18298079.jpeg?cs=srgb&dl=pexels-wojtekpaczes-18298079.jpg&fm=jpg&_gl=1*1ms243v*_ga*MTkyMTc1MDU0NC4xNzMyNTExNjc5*_ga_8JE65Q40S6*MTczNDk0ODM5OS4xOS4xLjE3MzQ5NTE4MzQuMC4wLjA.');
+}
+
+/* #header .logo-container {
+  flex: 1; */
+
+
+
+/* #header .logo {
+  width: 120px;
+  background-image: url('https://images.pexels.com/photos/6571000/pexels-photo-6571000.jpeg?cs=srgb&dl=pexels--rahulshah--6571000.jpg&fm=jpg&_gl=1*49dl9n*_ga*MTkyMTc1MDU0NC4xNzMyNTExNjc5*_ga_8JE65Q40S6*MTczMjUxMTY3OS4xLjEuMTczMjUxMjIyMy4wLjAuMA..'); */
+ 
+
+
+.navbar {
+  flex: 2;
+  text-align: right;
+}
+
+.navbar ul {
+  list-style-type: none;
+}
+
+.navbar ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  color: violet;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* About Section */
+.about {
+  background: url('https://images.pexels.com/photos/1370295/pexels-photo-1370295.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center/cover;
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.about .container {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  background: url('https://images.pexels.com/photos/29679453/pexels-photo-29679453.jpeg?cs=srgb&dl=pexels-carlos-lopez-2147591480-29679453.jpg&fm=jpg&_gl=1*1vgu1j2*_ga*MTkyMTc1MDU0NC4xNzMyNTExNjc5*_ga_8JE65Q40S6*MTczMzc1Mzg1My4xNy4xLjE3MzM3NTM5MjcuMC4wLjA.');
+}
+ .about .container:hover {
+    color: gold;
+    text-shadow: 3px 3px 10px rgba(255, 215, 0, 0.8);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+ }
+
+.about h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Facilities Section */
+.facilities {
+  background:url('https://images.pexels.com/photos/159213/hall-congress-architecture-building-159213.jpeg?cs=srgb&dl=pexels-pixabay-159213.jpg&fm=jpg&_gl=1*swrbkr*_ga*MTkyMTc1MDU0NC4xNzMyNTExNjc5*_ga_8JE65Q40S6*MTczNDk0ODM5OS4xOS4xLjE3MzQ5NTAyOTkuMC4wLjA.');
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.facilities:hover {
+    color: red;
+    text-shadow: 3px 3px 10px rgba(255, 215, 0, 0.8);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+ }
+
+.facilities h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.facilities ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.facilities ul li {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #333;
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+  background:url('https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg?cs=srgb&dl=pexels-pixabay-87651.jpg&fm=jpg&_gl=1*in9fxi*_ga*MTkyMTc1MDU0NC4xNzMyNTExNjc5*_ga_8JE65Q40S6*MTczMzU1MDMyOS4xNi4xLjE3MzM1NTE2OTIuMC4wLjA.');
+}
+
+.contact a {
+  color: #f1c40f;
+  text-decoration: none;
+  
+}
+
+.contact:hover {
+  text-decoration: underline;
+  color: greenyellow;
+  text-shadow: 3px 3px 10px rgba(255, 215, 0, 0.8);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+/* Footer Section */
+footer {
+  background-color: #222;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header id="header">
+    <div class="logo-container">
+      <!-- <img src="https://www.pexels.com/photo/teach-dice-ornament-on-table-301926/" alt="Cambridge Public School Logo" class="logo"> -->
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Us Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h1>Welcome to Cambridge Public School</h1>
+      <p>Cambridge Public School,is a premier educational institution committed to delivering high-quality education, fostering holistic development, and nurturing future leaders.</p>
+      <p>Our school offers a balanced approach to academics and extracurricular activities, ensuring the all-round development of every student.</p>
+    </div>
+  </section>
+
+  <!-- Facilities Section -->
+  <section id="facilities" class="facilities">
+    <div class="container">
+      <h2>Our Facilities</h2>
+      <ul>
+        <li>Modern classrooms with interactive whiteboards</li>
+        <li>Well-stocked library with a wide range of books</li>
+        <li>State-of-the-art science and computer labs</li>
+        <li>Sports facilities for football, basketball, cricket, and more</li>
+        <li>Auditorium for events, cultural programs, and performances</li>
+        <li>Round-the-clock security for the safety of students</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Cambridge Public School,</p>
+      <p> Shiladih , Barkatha,Hazaribagh,Jharkhand</p>
+      <p>Phone: <a href="+91-8709136656">8709136656</a></p>
+      <p>Email: <a href="bablupandeycps2014@gmail.com">bablupandeycps2014@gmail.com</a></p>
+      <p><H1>BY : BABLU PANDEY</H1></p>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Cambridge Public School. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
